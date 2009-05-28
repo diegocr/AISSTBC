@@ -1,0 +1,58 @@
+Short:        AISS ToolBar Creator
+Author:       Diego Casorran <diegocr@users.sf.net>
+Type:         gfx/misc
+Version:      0.2
+Requires:     MUI, LayGroup.mcc, GuiGfx.mcc, guigfx.library, render.library
+Architecture: m68k-amigaos
+
+AISSTBC (AISS ToolBar Creator) is a single tool to create toolbar images 
+very quickly by just using drag-and-drop MUI feature, such toolbars which 
+usefull for developers using Toolbar.mcc or TheBar.mcc into his applications.
+
+Why I've created this tool and why it is called "AISS" comes from when I've 
+downloaded the great Mason's AISS package ( available from the followinhg url
+http://www.masonicons.info/aiss/index.html ), when I download the package I 
+thought it was as well a tool to create toolbars, and get a bit disappointed
+when i've not found such a tool, ...then I asked to myself: "why isnt there a
+program to create toolbars quickly and on a nice way?" ... at least afaik 
+there is no such a tool when it will be indeed a lot helpful, instead using 
+paint or similar programs for this job... hence, I decided to write such tool 
+myself, hoping it will be usefull to you as it is for me :-)
+
+The usage of the program should be very intuitive for everyone who is 
+developing a MUI prog.  The images are loaded via datatypes and the final 
+toolbar(s set) saved as well using dt. On the settings window you'll find 
+options about how the images are previewed, loaded and saved.  You can also
+save the current project (essential feature!) which makes updating a toolbar
+even more quickly.
+
+------------------------------------------------------------------------------
+ :: History
+ 
+ + 14th May 2009
+   
+   - Version 0.2
+   
+   - Fixed a bug which caused the application window to auto-close by loading
+     images with different sizes (width/height/depth). Preview images will now
+     be loaded by checking its sizes first, which makes the loading time 
+     longer unfortunately.. if you're sure your TBImages: folder contains all
+     images with matching dimensions you could use the enviroment variable
+     AISSTBC_OMITPICD (with a number other than 0) to skip that check.
+   
+   - Added three new options to the prefs, but for testing purposes as they
+     aren't probably helpfull at all...
+   
+ + 6th September 2006
+   
+   - Version 0.1
+
+------------------------------------------------------------------------------
+ :: Don't forget to visit us!
+
+http://masonicons.de/
+http://amiga.sourceforge.net/
+
+
+
+
